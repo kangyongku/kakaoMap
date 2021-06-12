@@ -79,9 +79,9 @@
 			
 		var initGetJson = function(){
 			$.ajax({
-				url: "https://kangyongku.github.io/kakaoMap/json/inchun.json",
+				url: "/kakaoMap/json/inchun.json",
 			    dataType: "json",
-			    type: "POST",
+			    type: "GET",
 			    async: false,
 			    success: function (data) {
 			    	positions2 = data;
