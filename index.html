@@ -52,7 +52,7 @@
         <div class="option">
             <div>
                 <form onsubmit="searchPlaces(); return false;">
-                    키워드 : <input type="text" value="" id="keyword" size="15"> 
+                    키워드 : <input type="text" value="약국" id="keyword" size="15"> 
                     <button type="submit">검색하기</button> 
                 </form>
             </div>
@@ -112,8 +112,8 @@
 		map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 		
 		// 키워드로 장소를 검색합니다
-		//searchPlaces();
-		initGetJson();
+		searchPlaces();
+		//initGetJson();
 
 		var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
 		for (var i = 0; i < positions.length; i++) {
